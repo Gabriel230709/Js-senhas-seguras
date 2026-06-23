@@ -91,10 +91,94 @@ body{
 }
 
 .parametro-senha__botao{
-
+    background: var(--borda);
+    border: none;
+    color: var(--branco);
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+.parametro-senha__botao:hover{
+    background: #0058d8;
 }
 .parametro-senha__texto{
 
+}
+
+.caracteristicas-lista{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+}
+
+.caracteristicas-lista li{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.caracteristicas-lista input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.botao-gerar{
+    background: #73D13D;
+    border: none;
+    color: var(--branco);
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 16px;
+}
+
+.botao-gerar:hover{
+    background: #5eba31;
+}
+
+.forca-senha{
+    margin-top: 24px;
+    width: 70%;
+    max-width: 500px;
+}
+
+.forca-senha__texto{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.forca-senha__barra{
+    width: 100%;
+    height: 12px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.forca-senha__barra-preenchimento{
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.forca-senha__barra-preenchimento.fraca{
+    width: 33%;
+    background: #FF4D4F;
+}
+
+.forca-senha__barra-preenchimento.media{
+    width: 66%;
+    background: #FFC53D;
+}
+
+.forca-senha__barra-preenchimento.forte{
+    width: 100%;
+    background: #73D13D;
 }
 
 @media screen and (min-width: 768px) {
